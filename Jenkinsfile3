@@ -1,0 +1,12 @@
+pipeline{
+    agent any
+    stages{
+        stage('Git Checkout'){
+            steps{
+            git url: 'https://github.com/Shubham1996-aws/maven-web-application.git', branch: "${BranchName}"  
+            }
+            
+            
+        }
+    }
+}
